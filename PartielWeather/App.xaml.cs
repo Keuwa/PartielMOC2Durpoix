@@ -8,7 +8,7 @@ namespace PartielWeather
 		{
 			InitializeComponent();
 
-			MainPage = new PartielWeatherPage();
+			MainPage = new MyPage();
 		}
 
 		protected override void OnStart()

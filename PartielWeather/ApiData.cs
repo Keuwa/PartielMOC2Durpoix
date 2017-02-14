@@ -1,25 +1,28 @@
 ﻿using System;
+
 namespace PartielWeather
 {
-	public class Api
+	public class ApiData
 	{
-		string Title { get; set; }
-		string Temperature { get; set; }
-		string Sunrise { get; set; }
-		string Wind { get; set; }
-		string Humidity { get; set; }
-		string Sunset { get; set; }
-		string Visibility { get; set; }
+		public string Title { get; set; }
+		public string Temperature { get; set; }
+		public string Wind { get; set; }
+		public string Humidity { get; set; }
+		public string Visibility { get; set; }
+		public string Sunrise { get; set; }
+		public string Sunset { get; set; }
 
-		public Api()
+		public ApiData()
 		{
-			this.Title = "";
-			this.Temperature = "";
-			this.Sunrise = "";
-			this.Wind = "";
-			this.Humidity = "";
-			this.Sunset = "";
-			this.Visibility = "";
+			//Because labels bind to these values, set them to an empty string to  
+			//ensure that the label appears on all platforms by default.  
+			this.Title = " ";
+			this.Temperature = " ";
+			this.Wind = " ";
+			this.Humidity = " ";
+			this.Visibility = " ";
+			this.Sunrise = " ";
+			this.Sunset = " ";
 		}
 	}
 }
